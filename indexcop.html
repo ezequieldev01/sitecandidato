@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Candidato</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to left, #0b0be9, green, yellow);
+            background-size: 500% 100%;
+            animation: degrade-animado 5s infinite alternate;
+        }
+
+        @keyframes degrade-animado {
+            0% {
+                background-position-x: 0%;
+            }
+            100% {
+                background-position-x: 100%;
+            }
+        }
+
+        .profile-container {
+            text-align: center;
+            background-color: #3e3e49;
+            padding: 100px; /* Ajustado o padding para o novo tamanho */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 300px; /* Reduzindo a largura do container */
+            position: relative;
+        }
+
+        .profile-container img {
+            width: 200px; /* Ajustado o tamanho da imagem proporcionalmente */
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-container h2 {
+            margin: 20px 0 10px 0; /* Ajustado o espaçamento para o novo tamanho */
+            font-size: 44px; /* Ajustado o tamanho da fonte */
+            color: #929299;
+            font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+        }
+
+        .profile-container .tagline {
+            font-size: 24px; /* Ajustado o tamanho da fonte */
+            margin: 10px 0;
+            color: #c1c1c7;
+            font-weight: bold;
+        }
+
+        .profile-container .number {
+            font-size: 40px; /* Ajustado o tamanho da fonte */
+            margin: 10px 0;
+            color: #c1c1c7;
+            font-weight: bold;
+        }
+
+        .profile-container .cnpj {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #acacac;
+        }
+
+        .contact-info {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #acacac;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="imagens/foto (30)edit4.JPG" alt="Foto do Candidato">
+        <h2>Erson</h2>
+        <div class="tagline">Vote para vereador</div>
+        <div class="number">10123</div>
+        <div class="cnpj">CNPJ: 56.509.614/0001-58</div>
+        <div class="contact-info">contato@ersonbarros.com.br</div> <!-- Contato no canto inferior direito -->
+    </div>
+</body>
+</html>
